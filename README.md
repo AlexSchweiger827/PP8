@@ -85,7 +85,7 @@ In this exercise you will:
    gcc -o solutions/getopt_flags solutions/getopt_flags.c
    ./solutions/getopt_flags -a -b
    ```
-![alt text](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%201%20compiled.PNG?raw=true)
+![Task 1 Compilation](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%201%20compiled.PNG?raw=true)
 
 ---
 
