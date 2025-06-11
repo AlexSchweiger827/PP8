@@ -210,7 +210,9 @@ Flags only have two states 0 (FALSE) or 1 (TRUE). Parameters can be letters (str
    gcc -o solutions/interactive solutions/interactive.c
    ./solutions/interactive
    ```
-
+Task 3 Compiled:
+   
+![Task 3 Compiled](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%203%20compiled.PNG?raw=true)
 #### Reflection Question
 
 * **Why is a run-to-completion (batch) approach often preferable to interactive input?**
