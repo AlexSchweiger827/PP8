@@ -86,6 +86,7 @@ In this exercise you will:
    ./solutions/getopt_flags -a -b
    ```
 Task 1 Compilation:
+
 ![Task 1 Compilation](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%201%20compiled.PNG?raw=true)
 
 ---
