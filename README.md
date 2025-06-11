@@ -246,10 +246,29 @@ Moreover the design to a run-to-completion tolerates errors.
    ./solutions/redirect_input < solutions/input.txt
    ```
 
+Task 4 Compiled:
+
+![Task 4 Compiled](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%204%20compiled.PNG?raw=true)
+
 #### Reflection Question
 
 * **What is the difference between redirecting to stdin and explicitly opening a file with `fopen`?**
+```
+stdin:
+The shell (stdin) connects to the file before the execution of the main.
+The program then reads from stdin (e.g. scanf) and has no information that the input is from a file or keyboard.
+Only one file can be redirected to stdin.
+It can be used by providing simple use of a file without necessity of opening the file.
 
+fopen:
+Example commend: FILE *fp = fopen("data.txt", "r");
+The function opens the file and defines the mode ("r" for read or "w" for write).
+The file pointer (e.g FILE*fp) is used for all Input and output operations on that file.
+By using fopen(), the program also need to to close the file (fclose) after it is finished.
+Furthemore the function can open more files or the same file multiple times.
+
+
+```
 ---
 
 ### Task 5: Caesar Cipher & Prototype Asymmetric XOR Cipher
