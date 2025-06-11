@@ -103,27 +103,38 @@ Task 1 Compiled:
    #include <unistd.h>
 
    int main(int argc, char *argv[]) {
-       int opt;
+       int opt;                  
        int number = 0;
-       char *str = NULL;
+       char *str = NULL;                                          //initialize pointers to NULL to avoid wild pointers
        char *infile = NULL, *outfile = NULL;
-
-       while ((opt = getopt(argc, argv, "n:s:i:o:")) != -1) {
-           if      (opt == 'n') number  = atoi(optarg);
-           else if (opt == 's') str     = optarg;
-           else if (opt == 'i') infile  = optarg;
-           else if (opt == 'o') outfile = optarg;
+   
+      //loop using getopt. getopt returns -1 if no options have to be processed
+       while ((opt = getopt(argc, argv, "n:s:i:o:")) != -1) {    //"n:s:i:o": the option that require an argument
+   
+      //If the option is -n its string is in optarg and atoi converts the String to an argument
+           if      (opt == 'n') number  = atoi(optarg);         //'-n': Number;
+   
+      //If the option is -s its string is in optarg 
+           else if (opt == 's') str     = optarg;               //'-s': String
+   
+      //If the option is -i the input filename is in optarg 
+           else if (opt == 'i') infile  = optarg;               //'-i': The name of the inputfile
+   
+      //If the option is -o the input filename is in optarg 
+           else if (opt == 'o') outfile = optarg;               //'-o': The name of the outputfile
            else {
+      //If getopt returns a "?" (due to an unknown option or a missing argument) a usage will be printed to stderr 
                fprintf(stderr, "Usage: %s -n num -s str -i infile -o outfile\n", argv[0]);
                exit(EXIT_FAILURE);
            }
        }
-
+   
+      //The arguments or values of the single options will be printed 
        printf("number=%d, string=%s, infile=%s, outfile=%s\n",
               number,
-              str     ? str     : "(null)",
-              infile  ? infile  : "(none)",
-              outfile ? outfile : "(none)");
+              str     ? str     : "(null)", //Print str if str is not NULL else print "null"
+              infile  ? infile  : "(none)", //Print infile if infile is not NULL else print "none"
+              outfile ? outfile : "(none)"); // //Print outfile if outfile is not NULL else print "none"
        return 0;
    }
    ```
@@ -139,8 +150,19 @@ Task 2 Compiled:
 #### Reflection Questions
 
 1. **How do you pass a file name to a program using the `-i` and `-o` options?**
-2. **What are typical use cases for parameters versus flags? How do the differ from one another?**
+   
+```bash
+/solutions/getopt_params -i file1 -o file2
+```
 
+2. **What are typical use cases for parameters versus flags? How do they differ from one another?**
+```
+Flags are used for switches (on=1 off=0) or logic gates.
+Parameters can be used for Identification like a hostname. They are mandatory for data storage.
+
+Difference:
+Flags only have two states 0 (FALSE) or 1 (TRUE). Parameters can be letters (strings, char) numbers (int, float, double) or even states.
+```
 ---
 
 ### Task 3: Interactive Input with `scanf` & `fscanf`
