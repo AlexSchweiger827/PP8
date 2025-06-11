@@ -216,7 +216,9 @@ Task 3 Compiled:
 #### Reflection Question
 
 * **Why is a run-to-completion (batch) approach often preferable to interactive input?**
-
+A batch can handle large data faster than by interactive processing.
+Furthermore human errors can be reduced because a batch does not need human input once it started.
+Moreover the design to a run-to-completion tolerates errors.
 ---
 
 ### Task 4: Input Redirection from STDIN
