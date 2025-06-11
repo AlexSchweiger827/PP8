@@ -85,9 +85,9 @@ In this exercise you will:
    gcc -o solutions/getopt_flags solutions/getopt_flags.c
    ./solutions/getopt_flags -a -b
    ```
-Task 1 Compilation:
+Task 1 Compiled:
 
-![Task 1 Compilation](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%201%20compiled.PNG?raw=true)
+![Task 1 Compiled](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%201%20compiled.PNG?raw=true)
 
 ---
 
@@ -133,7 +133,9 @@ Task 1 Compilation:
    gcc -o solutions/getopt_params solutions/getopt_params.c
    ./solutions/getopt_params -n 42 -s hello -i input.txt -o output.txt
    ```
-
+Task 2 Compiled:
+   
+![Task 2 Compiled](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%202%20compiled.PNG?raw=true)
 #### Reflection Questions
 
 1. **How do you pass a file name to a program using the `-i` and `-o` options?**
