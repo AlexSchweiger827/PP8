@@ -1,0 +1,2 @@
+This is a test text for redirect_input.
+
