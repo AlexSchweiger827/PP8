@@ -89,6 +89,12 @@ Task 1 Compiled:
 
 ![Task 1 Compiled](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%201%20compiled.PNG?raw=true)
 
+```
+Link of the programm getopt_flags.c:
+
+https://github.com/AlexSchweiger827/PP8/blob/master/solutions/getopt_flags.c
+
+```
 ---
 
 ### Task 2: Command-line Parameters & File Names
@@ -147,6 +153,13 @@ Task 1 Compiled:
 Task 2 Compiled:
    
 ![Task 2 Compiled](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%202%20compiled.PNG?raw=true)
+
+```
+Link of the programm getopt_params.c:
+
+https://github.com/AlexSchweiger827/PP8/blob/master/solutions/getopt_params.c
+
+```
 #### Reflection Questions
 
 1. **How do you pass a file name to a program using the `-i` and `-o` options?**
@@ -213,6 +226,14 @@ Flags only have two states 0 (FALSE) or 1 (TRUE). Parameters can be letters (str
 Task 3 Compiled:
    
 ![Task 3 Compiled](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%203%20compiled.PNG?raw=true)
+
+```
+Link of the programm interactive.c
+
+https://github.com/AlexSchweiger827/PP8/blob/master/solutions/interactive.c
+
+```
+
 #### Reflection Question
 
 * **Why is a run-to-completion (batch) approach often preferable to interactive input?**
@@ -249,6 +270,13 @@ Moreover the design to a run-to-completion tolerates errors.
 Task 4 Compiled:
 
 ![Task 4 Compiled](https://github.com/AlexSchweiger827/PP8/blob/master/PP8%20screenshots/Task%204%20compiled.PNG?raw=true)
+
+```
+Link of the programm redirect_input.c
+
+https://github.com/AlexSchweiger827/PP8/blob/master/solutions/redirect_input.c
+
+```
 
 #### Reflection Question
 
