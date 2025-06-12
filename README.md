@@ -490,3 +490,4 @@ Furthemore the function can open more files or the same file multiple times.
 ---
 
 **Remember:** Stop after **90 minutes** and record where you stopped.
+I did task 1-4 in 87 minutes.
